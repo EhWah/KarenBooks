@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		713EA6A848C5A34EA2E079D0 /* Pods_KarenBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2B660A559B299BF72EBA3B /* Pods_KarenBooks.framework */; };
+		FB4FF31C24F58B92007A5047 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4FF31B24F58B92007A5047 /* BookTableViewCell.swift */; };
 		FB51204A24F411BD00B02E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51204924F411BD00B02E4E /* AppDelegate.swift */; };
 		FB51204C24F411BD00B02E4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51204B24F411BD00B02E4E /* SceneDelegate.swift */; };
 		FB51204E24F411BD00B02E4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51204D24F411BD00B02E4E /* ViewController.swift */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B1750207CA163FAFB3254B1 /* Pods-KarenBooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarenBooks.release.xcconfig"; path = "Target Support Files/Pods-KarenBooks/Pods-KarenBooks.release.xcconfig"; sourceTree = "<group>"; };
+		8CF7993AAC4F94BB016D8D4F /* Pods-KarenBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarenBooks.debug.xcconfig"; path = "Target Support Files/Pods-KarenBooks/Pods-KarenBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		DD2B660A559B299BF72EBA3B /* Pods_KarenBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarenBooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4FF31B24F58B92007A5047 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		FB51204624F411BD00B02E4E /* KarenBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarenBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51204924F411BD00B02E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB51204B24F411BD00B02E4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713EA6A848C5A34EA2E079D0 /* Pods_KarenBooks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A205D0BCB955FAF46A32714 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD2B660A559B299BF72EBA3B /* Pods_KarenBooks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EB8402ED694ED7912019285 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CF7993AAC4F94BB016D8D4F /* Pods-KarenBooks.debug.xcconfig */,
+				4B1750207CA163FAFB3254B1 /* Pods-KarenBooks.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FB51203D24F411BD00B02E4E = {
 			isa = PBXGroup;
 			children = (
 				FB51204824F411BD00B02E4E /* KarenBooks */,
 				FB51204724F411BD00B02E4E /* Products */,
+				9EB8402ED694ED7912019285 /* Pods */,
+				2A205D0BCB955FAF46A32714 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +85,7 @@
 				FB51204924F411BD00B02E4E /* AppDelegate.swift */,
 				FB51204B24F411BD00B02E4E /* SceneDelegate.swift */,
 				FB51204D24F411BD00B02E4E /* ViewController.swift */,
+				FB4FF31B24F58B92007A5047 /* BookTableViewCell.swift */,
 				FB51204F24F411BD00B02E4E /* Main.storyboard */,
 				FB51205224F411C000B02E4E /* Assets.xcassets */,
 				FB51205424F411C000B02E4E /* LaunchScreen.storyboard */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB51205A24F411C000B02E4E /* Build configuration list for PBXNativeTarget "KarenBooks" */;
 			buildPhases = (
+				2A9E5268C88C562C85C089AA /* [CP] Check Pods Manifest.lock */,
 				FB51204224F411BD00B02E4E /* Sources */,
 				FB51204324F411BD00B02E4E /* Frameworks */,
 				FB51204424F411BD00B02E4E /* Resources */,
+				F56D4C0ADD532535794AD2EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A9E5268C88C562C85C089AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KarenBooks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F56D4C0ADD532535794AD2EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KarenBooks/Pods-KarenBooks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KarenBooks/Pods-KarenBooks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KarenBooks/Pods-KarenBooks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB51204224F411BD00B02E4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4FF31C24F58B92007A5047 /* BookTableViewCell.swift in Sources */,
 				FB51204E24F411BD00B02E4E /* ViewController.swift in Sources */,
 				FB51204A24F411BD00B02E4E /* AppDelegate.swift in Sources */,
 				FB51204C24F411BD00B02E4E /* SceneDelegate.swift in Sources */,
@@ -282,6 +354,7 @@
 		};
 		FB51205B24F411C000B02E4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF7993AAC4F94BB016D8D4F /* Pods-KarenBooks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		FB51205C24F411C000B02E4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B1750207CA163FAFB3254B1 /* Pods-KarenBooks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

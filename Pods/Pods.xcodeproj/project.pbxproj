@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12577F7E9BF5EE1DE607B53F1A1A39E7 /* PDFReader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8EE7075018E123617E6460734D55DD8 /* PDFReader.storyboard */; };
+		1EFE4B5D3BB37D08932A3D1CBA28205A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		25C0084BD1B78823F256CEA452175C68 /* PDFDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA632CD6C5FF9D44F3F19338172587 /* PDFDocument.swift */; };
+		393DEDA61342017079F157F5FE2977A1 /* PDFPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0ADCF5E13D280DC682FFC9D849DF5B /* PDFPageCollectionViewCell.swift */; };
+		501E895735653891FC6C675A5CBFC90A /* PDFThumbnailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482EE3404ECFD78C726EC321E71CF31B /* PDFThumbnailCollectionViewController.swift */; };
+		5269CEA049BAD83E3C837C404F28DDA4 /* TiledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EC48E22D4D46E6964185854D8CB112 /* TiledView.swift */; };
+		70C7155C2DF27201010035AAA29EF9B9 /* Pods-KarenBooks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E72E27799314E0DCC1F8859CCDCC1626 /* Pods-KarenBooks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		792185761D613449CAA6878EFA1F7C2E /* PDFReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7BDB66CD63080C64B2A6DAA8D7DE42 /* PDFReader-dummy.m */; };
+		7A1A8C0A03F479B4FD52CBDA3CC556F9 /* PDFThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90F3CD98AE485993F634E8FCA37A45 /* PDFThumbnailCell.swift */; };
+		8C85565D475AC528C22194DA2BF960A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		97F6A3FEF93928236234B11CA60A5FAE /* PDFPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E92F2A07073AF8838866555AD5B73E /* PDFPageView.swift */; };
+		98E4A2F63E03E481CA3B4B43489420BC /* PDFReader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA9B0D7C156779DEA40B754D7185DFB /* PDFReader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD36DF479154B6D33B04023A8C26F3BC /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DEAA05A15ACAD03C416A4AC5BC0C1D /* PDFViewController.swift */; };
+		E98B019887480DF34885EFC863E6B367 /* Pods-KarenBooks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E050A9BB2D3DD253B3EB1375320EFC83 /* Pods-KarenBooks-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAD7995A5BD3A44E7769759B343A9F43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4E6E54F886C5F27B6049EE8444C551A;
+			remoteInfo = PDFReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06A4B0E8F9072D1196C002C9697410C7 /* Pods-KarenBooks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KarenBooks.modulemap"; sourceTree = "<group>"; };
+		10A533F1EE215764AFF946E9217D5480 /* PDFReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PDFReader.framework; path = PDFReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16DEAA05A15ACAD03C416A4AC5BC0C1D /* PDFViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFViewController.swift; path = Sources/Classes/PDFViewController.swift; sourceTree = "<group>"; };
+		1E300BC2DB777C53E959284D51C333C6 /* Pods_KarenBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KarenBooks.framework; path = "Pods-KarenBooks.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2291E89EF9F3CFA2B4A01EB3E70EEF02 /* Pods-KarenBooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KarenBooks.release.xcconfig"; sourceTree = "<group>"; };
+		2DFA632CD6C5FF9D44F3F19338172587 /* PDFDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFDocument.swift; path = Sources/Classes/PDFDocument.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		40F1981D1C4B547D50648355CE3B6DE7 /* PDFReader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PDFReader-Info.plist"; sourceTree = "<group>"; };
+		4154685EDEB1EDFE5BA546E64B05ED91 /* PDFReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDFReader.release.xcconfig; sourceTree = "<group>"; };
+		45C44A649B4FEBE7A5A38C8C91EF2507 /* Pods-KarenBooks-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KarenBooks-acknowledgements.markdown"; sourceTree = "<group>"; };
+		47E92F2A07073AF8838866555AD5B73E /* PDFPageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPageView.swift; path = Sources/Classes/PDFPageView.swift; sourceTree = "<group>"; };
+		482EE3404ECFD78C726EC321E71CF31B /* PDFThumbnailCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFThumbnailCollectionViewController.swift; path = Sources/Classes/PDFThumbnailCollectionViewController.swift; sourceTree = "<group>"; };
+		55B2DB8C3762A1FC0913F825A8C71254 /* PDFReader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PDFReader.modulemap; sourceTree = "<group>"; };
+		55EDBA91F416D12854ACE586A0C56098 /* Pods-KarenBooks-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KarenBooks-acknowledgements.plist"; sourceTree = "<group>"; };
+		5959AA21AD6463F71DC90820D0785620 /* PDFReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDFReader.debug.xcconfig; sourceTree = "<group>"; };
+		68EC48E22D4D46E6964185854D8CB112 /* TiledView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TiledView.swift; path = Sources/Classes/TiledView.swift; sourceTree = "<group>"; };
+		6C0ADCF5E13D280DC682FFC9D849DF5B /* PDFPageCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPageCollectionViewCell.swift; path = Sources/Classes/PDFPageCollectionViewCell.swift; sourceTree = "<group>"; };
+		6EB924A11135B31C7D978E649DAA3E2C /* Pods-KarenBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KarenBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		8F90F3CD98AE485993F634E8FCA37A45 /* PDFThumbnailCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFThumbnailCell.swift; path = Sources/Classes/PDFThumbnailCell.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AC7BDB66CD63080C64B2A6DAA8D7DE42 /* PDFReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDFReader-dummy.m"; sourceTree = "<group>"; };
+		BE2E2722BDD51B6BFF39016AED6D754C /* Pods-KarenBooks-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KarenBooks-frameworks.sh"; sourceTree = "<group>"; };
+		CAA9B0D7C156779DEA40B754D7185DFB /* PDFReader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFReader-umbrella.h"; sourceTree = "<group>"; };
+		CD717C24413DBBB970DC86852854F4D3 /* PDFReader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFReader-prefix.pch"; sourceTree = "<group>"; };
+		D6435BA39468D98BE1B4F36182AE664F /* Pods-KarenBooks-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KarenBooks-Info.plist"; sourceTree = "<group>"; };
+		E050A9BB2D3DD253B3EB1375320EFC83 /* Pods-KarenBooks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KarenBooks-dummy.m"; sourceTree = "<group>"; };
+		E72E27799314E0DCC1F8859CCDCC1626 /* Pods-KarenBooks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KarenBooks-umbrella.h"; sourceTree = "<group>"; };
+		E8EE7075018E123617E6460734D55DD8 /* PDFReader.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = PDFReader.storyboard; path = Sources/Assets/PDFReader.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8061DECA72DED478AC1B4A992CCE23FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFE4B5D3BB37D08932A3D1CBA28205A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBDC9F28C12A6C26C0CB5C109EFC011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C85565D475AC528C22194DA2BF960A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D8A6983D9FE9489CB2F6E0E3B8A6C97 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C563EDCC5E92B749B15F926748024289 /* Pods-KarenBooks */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		778CCB4001F60055AB0432E34FCC1468 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE7075018E123617E6460734D55DD8 /* PDFReader.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		97EAC5A90DBA759B27FCB55183E5393F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55B2DB8C3762A1FC0913F825A8C71254 /* PDFReader.modulemap */,
+				AC7BDB66CD63080C64B2A6DAA8D7DE42 /* PDFReader-dummy.m */,
+				40F1981D1C4B547D50648355CE3B6DE7 /* PDFReader-Info.plist */,
+				CD717C24413DBBB970DC86852854F4D3 /* PDFReader-prefix.pch */,
+				CAA9B0D7C156779DEA40B754D7185DFB /* PDFReader-umbrella.h */,
+				5959AA21AD6463F71DC90820D0785620 /* PDFReader.debug.xcconfig */,
+				4154685EDEB1EDFE5BA546E64B05ED91 /* PDFReader.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PDFReader";
+			sourceTree = "<group>";
+		};
+		AE602C52BD0167C0ACA3CC708887650D /* PDFReader */ = {
+			isa = PBXGroup;
+			children = (
+				2DFA632CD6C5FF9D44F3F19338172587 /* PDFDocument.swift */,
+				6C0ADCF5E13D280DC682FFC9D849DF5B /* PDFPageCollectionViewCell.swift */,
+				47E92F2A07073AF8838866555AD5B73E /* PDFPageView.swift */,
+				8F90F3CD98AE485993F634E8FCA37A45 /* PDFThumbnailCell.swift */,
+				482EE3404ECFD78C726EC321E71CF31B /* PDFThumbnailCollectionViewController.swift */,
+				16DEAA05A15ACAD03C416A4AC5BC0C1D /* PDFViewController.swift */,
+				68EC48E22D4D46E6964185854D8CB112 /* TiledView.swift */,
+				778CCB4001F60055AB0432E34FCC1468 /* Resources */,
+				97EAC5A90DBA759B27FCB55183E5393F /* Support Files */,
+			);
+			name = PDFReader;
+			path = PDFReader;
+			sourceTree = "<group>";
+		};
+		B484EE31AA808F1CF0AFC81D15128192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10A533F1EE215764AFF946E9217D5480 /* PDFReader.framework */,
+				1E300BC2DB777C53E959284D51C333C6 /* Pods_KarenBooks.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C563EDCC5E92B749B15F926748024289 /* Pods-KarenBooks */ = {
+			isa = PBXGroup;
+			children = (
+				06A4B0E8F9072D1196C002C9697410C7 /* Pods-KarenBooks.modulemap */,
+				45C44A649B4FEBE7A5A38C8C91EF2507 /* Pods-KarenBooks-acknowledgements.markdown */,
+				55EDBA91F416D12854ACE586A0C56098 /* Pods-KarenBooks-acknowledgements.plist */,
+				E050A9BB2D3DD253B3EB1375320EFC83 /* Pods-KarenBooks-dummy.m */,
+				BE2E2722BDD51B6BFF39016AED6D754C /* Pods-KarenBooks-frameworks.sh */,
+				D6435BA39468D98BE1B4F36182AE664F /* Pods-KarenBooks-Info.plist */,
+				E72E27799314E0DCC1F8859CCDCC1626 /* Pods-KarenBooks-umbrella.h */,
+				6EB924A11135B31C7D978E649DAA3E2C /* Pods-KarenBooks.debug.xcconfig */,
+				2291E89EF9F3CFA2B4A01EB3E70EEF02 /* Pods-KarenBooks.release.xcconfig */,
+			);
+			name = "Pods-KarenBooks";
+			path = "Target Support Files/Pods-KarenBooks";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D24073B96D364363E212CC4EFD19D836 /* Pods */,
+				B484EE31AA808F1CF0AFC81D15128192 /* Products */,
+				2D8A6983D9FE9489CB2F6E0E3B8A6C97 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D24073B96D364363E212CC4EFD19D836 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE602C52BD0167C0ACA3CC708887650D /* PDFReader */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		25564BE390B68DE5C1E8D8A02FCD17A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C7155C2DF27201010035AAA29EF9B9 /* Pods-KarenBooks-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1086B1DDCC69C60F8AA0648D01E66BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E4A2F63E03E481CA3B4B43489420BC /* PDFReader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D16AE8A823DBA38438EB856E9975B055 /* Pods-KarenBooks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FE4A83FEC535CE63C65AD3DC48C8834 /* Build configuration list for PBXNativeTarget "Pods-KarenBooks" */;
+			buildPhases = (
+				25564BE390B68DE5C1E8D8A02FCD17A0 /* Headers */,
+				59F1FE936F053CA35C643447911311A9 /* Sources */,
+				8061DECA72DED478AC1B4A992CCE23FE /* Frameworks */,
+				024CDFFB836B19432A7A446685CBE5CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B950E8A6A538EC527E6C69E89E5DA1B /* PBXTargetDependency */,
+			);
+			name = "Pods-KarenBooks";
+			productName = "Pods-KarenBooks";
+			productReference = 1E300BC2DB777C53E959284D51C333C6 /* Pods_KarenBooks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4E6E54F886C5F27B6049EE8444C551A /* PDFReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF95F4640B12C7E561C9D2418909F761 /* Build configuration list for PBXNativeTarget "PDFReader" */;
+			buildPhases = (
+				E1086B1DDCC69C60F8AA0648D01E66BB /* Headers */,
+				CB4882D8990DB5F7412E48AE9F580DB3 /* Sources */,
+				BDBDC9F28C12A6C26C0CB5C109EFC011 /* Frameworks */,
+				08D5E0AFD6E43EF08F8BD755CE3B3EE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFReader;
+			productName = PDFReader;
+			productReference = 10A533F1EE215764AFF946E9217D5480 /* PDFReader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B484EE31AA808F1CF0AFC81D15128192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4E6E54F886C5F27B6049EE8444C551A /* PDFReader */,
+				D16AE8A823DBA38438EB856E9975B055 /* Pods-KarenBooks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		024CDFFB836B19432A7A446685CBE5CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08D5E0AFD6E43EF08F8BD755CE3B3EE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12577F7E9BF5EE1DE607B53F1A1A39E7 /* PDFReader.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59F1FE936F053CA35C643447911311A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98B019887480DF34885EFC863E6B367 /* Pods-KarenBooks-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4882D8990DB5F7412E48AE9F580DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C0084BD1B78823F256CEA452175C68 /* PDFDocument.swift in Sources */,
+				393DEDA61342017079F157F5FE2977A1 /* PDFPageCollectionViewCell.swift in Sources */,
+				97F6A3FEF93928236234B11CA60A5FAE /* PDFPageView.swift in Sources */,
+				792185761D613449CAA6878EFA1F7C2E /* PDFReader-dummy.m in Sources */,
+				7A1A8C0A03F479B4FD52CBDA3CC556F9 /* PDFThumbnailCell.swift in Sources */,
+				501E895735653891FC6C675A5CBFC90A /* PDFThumbnailCollectionViewController.swift in Sources */,
+				AD36DF479154B6D33B04023A8C26F3BC /* PDFViewController.swift in Sources */,
+				5269CEA049BAD83E3C837C404F28DDA4 /* TiledView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B950E8A6A538EC527E6C69E89E5DA1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PDFReader;
+			target = D4E6E54F886C5F27B6049EE8444C551A /* PDFReader */;
+			targetProxy = CAD7995A5BD3A44E7769759B343A9F43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4B634AD2F56BB253809D21D0D0F6AECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4154685EDEB1EDFE5BA546E64B05ED91 /* PDFReader.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PDFReader/PDFReader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PDFReader/PDFReader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PDFReader/PDFReader.modulemap";
+				PRODUCT_MODULE_NAME = PDFReader;
+				PRODUCT_NAME = PDFReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D3542686D8757C2537B26F48324DC31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB924A11135B31C7D978E649DAA3E2C /* Pods-KarenBooks.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KarenBooks/Pods-KarenBooks-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KarenBooks/Pods-KarenBooks.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CEA351406E3FB5B0C2FFA8A3837C0B1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5959AA21AD6463F71DC90820D0785620 /* PDFReader.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PDFReader/PDFReader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PDFReader/PDFReader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PDFReader/PDFReader.modulemap";
+				PRODUCT_MODULE_NAME = PDFReader;
+				PRODUCT_NAME = PDFReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0C4EEBB12A8D56A91AD7B27D6E6CEA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2291E89EF9F3CFA2B4A01EB3E70EEF02 /* Pods-KarenBooks.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KarenBooks/Pods-KarenBooks-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KarenBooks/Pods-KarenBooks.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F5F04600F5626DC980F02790D1ED2C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */,
+				F5F04600F5626DC980F02790D1ED2C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FE4A83FEC535CE63C65AD3DC48C8834 /* Build configuration list for PBXNativeTarget "Pods-KarenBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D3542686D8757C2537B26F48324DC31 /* Debug */,
+				D0C4EEBB12A8D56A91AD7B27D6E6CEA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF95F4640B12C7E561C9D2418909F761 /* Build configuration list for PBXNativeTarget "PDFReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA351406E3FB5B0C2FFA8A3837C0B1C /* Debug */,
+				4B634AD2F56BB253809D21D0D0F6AECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
