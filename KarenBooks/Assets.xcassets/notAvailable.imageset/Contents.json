@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "15g46yg7-front-shortedge-384.jpg",
+      "filename" : "notAvailable.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "notAvailable@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "notAvailable@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

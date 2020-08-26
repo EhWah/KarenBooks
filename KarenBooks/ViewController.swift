@@ -9,27 +9,42 @@
 import UIKit
 import PDFReader
 
-struct Books {
-    let title: String
-    let subtitle: String
-    let pdfLink: String
-}
-
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var books = [
-        Books(title: "The Bronze Drum and the Karen", subtitle: "ကျိၣ်ဒီးကညီဖိ", pdfLink: "https://www.drumpublications.org/download/karendrum_k.pdf"),
-        Books(title: "Hta and the Karen Way of Life ", subtitle: "ပှၤကညီအလုၢ်ဖိထါဖိဒီးတၢ်တဲယုၤတဖၣ်", pdfLink: "https://www.drumpublications.org/download/traditionalkarencloth.pdf"),
-    Books(title: "Karen History and Traditional Judicial System", subtitle: "ကညီတၢ်စံၣ်စိၤတဲစိၤဒီးလုၢ်လၢ်ထူသနူ", pdfLink: "https://www.drumpublications.org/download/karenhistoryk.pdf")]
-    
 
+    var books = [Book]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        locateJsonFile()
+    }
+    
+    func locateJsonFile() {
+        // locate the json file in project
+        // ကွၢ်ဃု json file လၢပ project အပူၤ
+        
+        let urlString = "https://raw.githubusercontent.com/EhWah/Karen-Library/master/jsonData.json"
+        
+        if let url = URL(string: urlString) {
+            if let data = try? Data(contentsOf: url) {
+                
+                parse(json: data)
+            }
+        }
         
     }
+    
+    func parse(json: Data) {
+        let decoder = JSONDecoder()
+        if let json = try? decoder.decode(Books.self, from: json) {
+            books.append(contentsOf: json.books)
+        }
+        tableView.reloadData()
+    }
+
     
 }
 
@@ -40,19 +55,21 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! BookTableViewCell
-        cell.bookEnglishTitle.text = books[indexPath.row].title
-        cell.bookKarenTitle.text = books[indexPath.row].subtitle
+        cell.bookEnglishTitle.text = books[indexPath.row].bookTitleKaren
+//        cell.bookKarenTitle.text = books[indexPath.row].bookCategory
+        
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let remotePDFDocumentURL = URL(string: books[indexPath.row].pdfLink)!
-        let document = PDFDocument(url: remotePDFDocumentURL)!
-        
-        let readerController = PDFViewController.createNew(with: document)
-        readerController.navigationItem.largeTitleDisplayMode = .never
-        navigationController?.pushViewController(readerController, animated: true)
-    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        
+//        let remotePDFDocumentURL = URL(string: books[indexPath.row].bookCategory)!
+//        let document = PDFDocument(url: remotePDFDocumentURL)!
+//        
+//        let readerController = PDFViewController.createNew(with: document, title: books[indexPath.row].bookTitleKaren, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: true, startPageIndex: 0)
+//        readerController.navigationItem.largeTitleDisplayMode = .never
+//        
+//        navigationController?.pushViewController(readerController, animated: true)
+//    }
 }
 

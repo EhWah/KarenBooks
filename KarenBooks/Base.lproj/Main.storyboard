@@ -56,7 +56,7 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="15g46yg7-front-shortedge-384" translatesAutoresizingMaskIntoConstraints="NO" id="ClD-cE-McD">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notAvailable" translatesAutoresizingMaskIntoConstraints="NO" id="ClD-cE-McD">
                                                             <rect key="frame" x="0.0" y="-31" width="133" height="176"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="133" id="Yn3-cK-rwl"/>
@@ -152,6 +152,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="15g46yg7-front-shortedge-384" width="384" height="544"/>
+        <image name="notAvailable" width="134" height="176"/>
     </resources>
 </document>

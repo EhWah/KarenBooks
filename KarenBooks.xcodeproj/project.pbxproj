@@ -15,6 +15,7 @@
 		FB51205124F411BD00B02E4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51204F24F411BD00B02E4E /* Main.storyboard */; };
 		FB51205324F411C000B02E4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51205224F411C000B02E4E /* Assets.xcassets */; };
 		FB51205624F411C000B02E4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51205424F411C000B02E4E /* LaunchScreen.storyboard */; };
+		FB52553724F5CAEC00311E1F /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52553624F5CAEC00311E1F /* Books.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FB51205224F411C000B02E4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB51205524F411C000B02E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB51205724F411C000B02E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB52553624F5CAEC00311E1F /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				FB51204924F411BD00B02E4E /* AppDelegate.swift */,
 				FB51204B24F411BD00B02E4E /* SceneDelegate.swift */,
 				FB51204D24F411BD00B02E4E /* ViewController.swift */,
+				FB52553624F5CAEC00311E1F /* Books.swift */,
 				FB4FF31B24F58B92007A5047 /* BookTableViewCell.swift */,
 				FB51204F24F411BD00B02E4E /* Main.storyboard */,
 				FB51205224F411C000B02E4E /* Assets.xcassets */,
@@ -213,6 +216,7 @@
 				FB51204E24F411BD00B02E4E /* ViewController.swift in Sources */,
 				FB51204A24F411BD00B02E4E /* AppDelegate.swift in Sources */,
 				FB51204C24F411BD00B02E4E /* SceneDelegate.swift in Sources */,
+				FB52553724F5CAEC00311E1F /* Books.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
