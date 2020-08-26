@@ -16,5 +16,7 @@ struct Book: Codable {
     var bookTitleEnglish: String
     var bookTitleKaren: String
     var bookAuthor: String
-//    var bookCategory: String
+    var bookCategory: String
+    var bookURL: String
+    var bookCoverURL: String
 }

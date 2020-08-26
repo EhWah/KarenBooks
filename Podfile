@@ -7,5 +7,6 @@ target 'KarenBooks' do
 
   # Pods for KarenBooks
 	pod 'PDFReader'
+	pod 'Alamofire', '~> 5.2'
 
 end

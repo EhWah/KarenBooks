@@ -8,6 +8,7 @@
 
 import UIKit
 import PDFReader
+import Alamofire
 
 class ViewController: UIViewController {
     
@@ -19,22 +20,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        locateJsonFile()
+        requestJson()
     }
     
-    func locateJsonFile() {
-        // locate the json file in project
-        // ကွၢ်ဃု json file လၢပ project အပူၤ
-        
-        let urlString = "https://raw.githubusercontent.com/EhWah/Karen-Library/master/jsonData.json"
-        
-        if let url = URL(string: urlString) {
-            if let data = try? Data(contentsOf: url) {
-                
-                parse(json: data)
+    func requestJson() {
+        AF.request("https://raw.githubusercontent.com/EhWah/Karen-Library/master/jsonData.json").response { (response) in
+            if let JSON = response.data {
+                self.parse(json: JSON)
             }
         }
-        
     }
     
     func parse(json: Data) {
@@ -44,7 +38,6 @@ class ViewController: UIViewController {
         }
         tableView.reloadData()
     }
-
     
 }
 
@@ -55,21 +48,31 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! BookTableViewCell
-        cell.bookEnglishTitle.text = books[indexPath.row].bookTitleKaren
-//        cell.bookKarenTitle.text = books[indexPath.row].bookCategory
         
+        cell.containerview.layer.cornerRadius = 5
+        cell.containerview.layer.shadowOpacity = 0.1
+        cell.containerview.layer.shadowOffset = CGSize(width: 1, height: 10)
+        cell.containerview.layer.shadowRadius = 15
+        cell.bookEnglishTitle.text = books[indexPath.row].bookTitleEnglish
+        cell.bookKarenTitle.text = books[indexPath.row].bookTitleKaren
+        
+        AF.download(books[indexPath.row].bookCoverURL).responseData { (response) in
+            if let data = response.value {
+                cell.bookCover.image = UIImage(data: data)
+            }
+        }
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        
-//        let remotePDFDocumentURL = URL(string: books[indexPath.row].bookCategory)!
-//        let document = PDFDocument(url: remotePDFDocumentURL)!
-//        
-//        let readerController = PDFViewController.createNew(with: document, title: books[indexPath.row].bookTitleKaren, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: true, startPageIndex: 0)
-//        readerController.navigationItem.largeTitleDisplayMode = .never
-//        
-//        navigationController?.pushViewController(readerController, animated: true)
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let remotePDFDocumentURL = URL(string: books[indexPath.row].bookURL)!
+        let document = PDFDocument(url: remotePDFDocumentURL)!
+        
+        let readerController = PDFViewController.createNew(with: document, title: books[indexPath.row].bookTitleKaren, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: true, startPageIndex: 0)
+        readerController.navigationItem.largeTitleDisplayMode = .never
+        
+        navigationController?.pushViewController(readerController, animated: true)
+    }
 }
 

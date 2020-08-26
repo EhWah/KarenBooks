@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		713EA6A848C5A34EA2E079D0 /* Pods_KarenBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2B660A559B299BF72EBA3B /* Pods_KarenBooks.framework */; };
+		FB46916E24F6C5BE0044407E /* Tharlon-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB46916D24F6C5BE0044407E /* Tharlon-Regular.ttf */; };
 		FB4FF31C24F58B92007A5047 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4FF31B24F58B92007A5047 /* BookTableViewCell.swift */; };
 		FB51204A24F411BD00B02E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51204924F411BD00B02E4E /* AppDelegate.swift */; };
 		FB51204C24F411BD00B02E4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51204B24F411BD00B02E4E /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 		4B1750207CA163FAFB3254B1 /* Pods-KarenBooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarenBooks.release.xcconfig"; path = "Target Support Files/Pods-KarenBooks/Pods-KarenBooks.release.xcconfig"; sourceTree = "<group>"; };
 		8CF7993AAC4F94BB016D8D4F /* Pods-KarenBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarenBooks.debug.xcconfig"; path = "Target Support Files/Pods-KarenBooks/Pods-KarenBooks.debug.xcconfig"; sourceTree = "<group>"; };
 		DD2B660A559B299BF72EBA3B /* Pods_KarenBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarenBooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB46916D24F6C5BE0044407E /* Tharlon-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tharlon-Regular.ttf"; sourceTree = "<group>"; };
 		FB4FF31B24F58B92007A5047 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		FB51204624F411BD00B02E4E /* KarenBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarenBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51204924F411BD00B02E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				FB51205224F411C000B02E4E /* Assets.xcassets */,
 				FB51205424F411C000B02E4E /* LaunchScreen.storyboard */,
 				FB51205724F411C000B02E4E /* Info.plist */,
+				FB46916D24F6C5BE0044407E /* Tharlon-Regular.ttf */,
 			);
 			path = KarenBooks;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				FB51205624F411C000B02E4E /* LaunchScreen.storyboard in Resources */,
 				FB51205324F411C000B02E4E /* Assets.xcassets in Resources */,
+				FB46916E24F6C5BE0044407E /* Tharlon-Regular.ttf in Resources */,
 				FB51205124F411BD00B02E4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

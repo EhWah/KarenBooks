@@ -1,16 +1,20 @@
 PODS:
+  - Alamofire (5.2.2)
   - PDFReader (2.5.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
   - PDFReader
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - PDFReader
 
 SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   PDFReader: 2c4a845d0560f33221cf911516e3b700967680f6
 
-PODFILE CHECKSUM: 99e533b1e3604f3e42f2b233d01e735e065a7c39
+PODFILE CHECKSUM: 9b3ef3bd687aee82708ae0de1c7745ebaeb02cc0
 
 COCOAPODS: 1.9.3

@@ -10,6 +10,7 @@ import UIKit
 
 class BookTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var containerview: UIView!
     @IBOutlet weak var bookEnglishTitle: UILabel!
     @IBOutlet weak var bookKarenTitle: UILabel!
     @IBOutlet weak var bookCover: UIImageView!
