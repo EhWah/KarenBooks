@@ -9,6 +9,7 @@
 import UIKit
 import PDFReader
 import Alamofire
+import AlamofireImage
 
 class ViewController: UIViewController {
     
@@ -35,7 +36,7 @@ class ViewController: UIViewController {
         let decoder = JSONDecoder()
         if let json = try? decoder.decode(Books.self, from: json) {
             books.append(contentsOf: json.books)
-        }
+        } 
         tableView.reloadData()
     }
     
@@ -49,30 +50,24 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! BookTableViewCell
         
-        cell.containerview.layer.cornerRadius = 5
-        cell.containerview.layer.shadowOpacity = 0.1
-        cell.containerview.layer.shadowOffset = CGSize(width: 1, height: 10)
-        cell.containerview.layer.shadowRadius = 15
-        cell.bookEnglishTitle.text = books[indexPath.row].bookTitleEnglish
-        cell.bookKarenTitle.text = books[indexPath.row].bookTitleKaren
+        cell.configure(book: books[indexPath.row])
         
-        AF.download(books[indexPath.row].bookCoverURL).responseData { (response) in
-            if let data = response.value {
-                cell.bookCover.image = UIImage(data: data)
-            }
-        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let remotePDFDocumentURL = URL(string: books[indexPath.row].bookURL)!
-        let document = PDFDocument(url: remotePDFDocumentURL)!
+        if let remotePDFDocumentURL = URL(string: books[indexPath.row].bookURL) {
+            if let document = PDFDocument(url: remotePDFDocumentURL) {
+                let readerController = PDFViewController.createNew(with: document, title: books[indexPath.row].bookTitleKaren, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: true, startPageIndex: 0)
+                readerController.navigationItem.largeTitleDisplayMode = .never
+                
+                navigationController?.pushViewController(readerController, animated: true)
+            }
+        }
         
-        let readerController = PDFViewController.createNew(with: document, title: books[indexPath.row].bookTitleKaren, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: true, startPageIndex: 0)
-        readerController.navigationItem.largeTitleDisplayMode = .never
+        print("no url")
         
-        navigationController?.pushViewController(readerController, animated: true)
     }
 }
 

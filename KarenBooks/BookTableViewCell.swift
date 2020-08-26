@@ -16,4 +16,20 @@ class BookTableViewCell: UITableViewCell {
     @IBOutlet weak var bookCover: UIImageView!
    
 
+    func configure(book: Book) {
+        bookEnglishTitle.text = book.bookTitleEnglish
+        bookKarenTitle.text = book.bookTitleKaren
+        
+        if let url = URL(string: book.bookCoverURL) {
+            bookCover.af.setImage(withURL: url)
+        } else {
+            bookCover.image = UIImage(named: "notAvailable")
+        }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        bookCover.af.cancelImageRequest()
+        bookCover.image = nil
+    }
 }
