@@ -10,6 +10,7 @@ import UIKit
 import PDFReader
 import Alamofire
 import AlamofireImage
+import ProgressHUD
 
 class ViewController: UIViewController {
     
@@ -25,6 +26,10 @@ class ViewController: UIViewController {
     }
     
     func requestJson() {
+        ProgressHUD.show()
+        ProgressHUD.animationType = .circleRotateChase
+        ProgressHUD.colorAnimation = .orange
+        
         AF.request("https://raw.githubusercontent.com/EhWah/Karen-Library/master/jsonData.json").response { (response) in
             if let JSON = response.data {
                 self.parse(json: JSON)
@@ -36,7 +41,8 @@ class ViewController: UIViewController {
         let decoder = JSONDecoder()
         if let json = try? decoder.decode(Books.self, from: json) {
             books.append(contentsOf: json.books)
-        } 
+        }
+        ProgressHUD.dismiss()
         tableView.reloadData()
     }
     
@@ -58,15 +64,28 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if let remotePDFDocumentURL = URL(string: books[indexPath.row].bookURL) {
+            
             if let document = PDFDocument(url: remotePDFDocumentURL) {
-                let readerController = PDFViewController.createNew(with: document, title: books[indexPath.row].bookTitleKaren, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: true, startPageIndex: 0)
-                readerController.navigationItem.largeTitleDisplayMode = .never
                 
+                
+                let readerController = PDFViewController.createNew(with: document, title: books[indexPath.row].bookTitleKaren, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: true, startPageIndex: 0)
+                
+                
+                
+                readerController.navigationItem.largeTitleDisplayMode = .never
                 navigationController?.pushViewController(readerController, animated: true)
             }
+            
+            ProgressHUD.showSucceed()
+            ProgressHUD.colorAnimation = .orange
+            
+        } else {
+           
+            ProgressHUD.showFailed()
+            ProgressHUD.colorAnimation = .orange
         }
         
-        print("no url")
+        
         
     }
 }
