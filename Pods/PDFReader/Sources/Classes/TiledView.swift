@@ -59,10 +59,10 @@ internal final class TiledView: UIView {
         guard let leftPdfPage = leftPdfPage else { return }
         
         // We must fetch the view bounds on the main queue
-        var bounds = CGRect.zero
-        DispatchQueue.main.sync { [weak self] in
-            bounds = self?.bounds ?? .zero
-        }
+//        var bounds = CGRect.zero
+//        DispatchQueue.main.sync { [weak self] in
+//            bounds = self?.bounds ?? .zero
+//        }
         
         // Fill the background with white.
         con.setFillColor(red: 1, green: 1, blue: 1, alpha: 1)
