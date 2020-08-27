@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1eL-O9-5wF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1eL-O9-5wF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -25,18 +25,18 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="206" id="331-e5-uKe" customClass="BookTableViewCell" customModule="KarenBooks" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="206"/>
+                                    <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="185" id="331-e5-uKe" customClass="BookTableViewCell" customModule="KarenBooks" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="185"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="331-e5-uKe" id="s1K-8p-J9G">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="185"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEx-YK-tuB" userLabel="container">
-                                                    <rect key="frame" x="23" y="65" width="368" height="106"/>
+                                                    <rect key="frame" x="23" y="48" width="368" height="137"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cB8-SS-xXJ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="368" height="106"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="368" height="137"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -74,7 +74,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notAvailable" translatesAutoresizingMaskIntoConstraints="NO" id="ClD-cE-McD">
-                                                            <rect key="frame" x="0.0" y="-70" width="133" height="176"/>
+                                                            <rect key="frame" x="0.0" y="-39" width="133" height="176"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="133" id="Yn3-cK-rwl"/>
                                                                 <constraint firstAttribute="height" constant="176" id="rxw-UF-zzH"/>
@@ -103,9 +103,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="dEx-YK-tuB" secondAttribute="trailing" constant="23" id="0LR-yH-zQz"/>
-                                                <constraint firstItem="dEx-YK-tuB" firstAttribute="top" secondItem="s1K-8p-J9G" secondAttribute="top" constant="65" id="Uya-Rw-dEj"/>
+                                                <constraint firstItem="dEx-YK-tuB" firstAttribute="top" secondItem="s1K-8p-J9G" secondAttribute="top" constant="48" id="Uya-Rw-dEj"/>
                                                 <constraint firstItem="dEx-YK-tuB" firstAttribute="leading" secondItem="s1K-8p-J9G" secondAttribute="leading" constant="23" id="eyA-lb-7rG"/>
-                                                <constraint firstAttribute="bottom" secondItem="dEx-YK-tuB" secondAttribute="bottom" constant="35" id="vtc-Zj-e3w"/>
+                                                <constraint firstAttribute="bottom" secondItem="dEx-YK-tuB" secondAttribute="bottom" id="vtc-Zj-e3w"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

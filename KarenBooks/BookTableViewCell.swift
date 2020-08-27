@@ -17,6 +17,7 @@ class BookTableViewCell: UITableViewCell {
    
 
     func configure(book: Book) {
+        
         bookEnglishTitle.text = book.bookTitleEnglish
         bookKarenTitle.text = book.bookTitleKaren
         
@@ -31,5 +32,14 @@ class BookTableViewCell: UITableViewCell {
         super.prepareForReuse()
         bookCover.af.cancelImageRequest()
         bookCover.image = nil
+    }
+    
+    override func awakeFromNib() {
+        
+        containerview.layer.cornerRadius = 4
+        containerview.layer.shadowOpacity = 0.1
+        containerview.layer.shadowOffset = CGSize(width: 1, height: 10)
+        containerview.layer.shadowRadius = 15
+        
     }
 }
