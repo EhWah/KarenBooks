@@ -14,12 +14,16 @@ class BookTableViewCell: UITableViewCell {
     @IBOutlet weak var bookEnglishTitle: UILabel!
     @IBOutlet weak var bookKarenTitle: UILabel!
     @IBOutlet weak var bookCover: UIImageView!
-   
+    @IBOutlet weak var bookCategory: UILabel!
+    @IBOutlet weak var bookFrom: UILabel!
+    
 
     func configure(book: Book) {
         
         bookEnglishTitle.text = book.bookTitleEnglish
         bookKarenTitle.text = book.bookTitleKaren
+        bookCategory.text = book.bookCategory
+        bookFrom.text = book.bookAuthor
         
         if let url = URL(string: book.bookCoverURL) {
             bookCover.af.setImage(withURL: url)

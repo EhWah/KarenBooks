@@ -25,7 +25,7 @@
 		DD2B660A559B299BF72EBA3B /* Pods_KarenBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarenBooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB46916D24F6C5BE0044407E /* Tharlon-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tharlon-Regular.ttf"; sourceTree = "<group>"; };
 		FB4FF31B24F58B92007A5047 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
-		FB51204624F411BD00B02E4E /* KarenBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarenBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB51204624F411BD00B02E4E /* Karen Digitial Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Karen Digitial Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51204924F411BD00B02E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB51204B24F411BD00B02E4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB51204D24F411BD00B02E4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		FB51204724F411BD00B02E4E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB51204624F411BD00B02E4E /* KarenBooks.app */,
+				FB51204624F411BD00B02E4E /* Karen Digitial Library.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,9 +103,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB51204524F411BD00B02E4E /* KarenBooks */ = {
+		FB51204524F411BD00B02E4E /* Karen Digitial Library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB51205A24F411C000B02E4E /* Build configuration list for PBXNativeTarget "KarenBooks" */;
+			buildConfigurationList = FB51205A24F411C000B02E4E /* Build configuration list for PBXNativeTarget "Karen Digitial Library" */;
 			buildPhases = (
 				2A9E5268C88C562C85C089AA /* [CP] Check Pods Manifest.lock */,
 				FB51204224F411BD00B02E4E /* Sources */,
@@ -117,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = KarenBooks;
+			name = "Karen Digitial Library";
 			productName = KarenBooks;
-			productReference = FB51204624F411BD00B02E4E /* KarenBooks.app */;
+			productReference = FB51204624F411BD00B02E4E /* Karen Digitial Library.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FB51204124F411BD00B02E4E /* Build configuration list for PBXProject "KarenBooks" */;
+			buildConfigurationList = FB51204124F411BD00B02E4E /* Build configuration list for PBXProject "Karen Digitial Library" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -150,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB51204524F411BD00B02E4E /* KarenBooks */,
+				FB51204524F411BD00B02E4E /* Karen Digitial Library */,
 			);
 		};
 /* End PBXProject section */
@@ -403,7 +403,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB51204124F411BD00B02E4E /* Build configuration list for PBXProject "KarenBooks" */ = {
+		FB51204124F411BD00B02E4E /* Build configuration list for PBXProject "Karen Digitial Library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB51205824F411C000B02E4E /* Debug */,
@@ -412,7 +412,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB51205A24F411C000B02E4E /* Build configuration list for PBXNativeTarget "KarenBooks" */ = {
+		FB51205A24F411C000B02E4E /* Build configuration list for PBXNativeTarget "Karen Digitial Library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB51205B24F411C000B02E4E /* Debug */,

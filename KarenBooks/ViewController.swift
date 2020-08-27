@@ -67,17 +67,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             
             if let document = PDFDocument(url: remotePDFDocumentURL) {
                 
+                let readerController = PDFViewController.createNew(with: document, title: books[indexPath.row].bookTitleEnglish, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: true, startPageIndex: 0)
                 
-                let readerController = PDFViewController.createNew(with: document, title: books[indexPath.row].bookTitleKaren, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: true, startPageIndex: 0)
-                
-                
+                ProgressHUD.showSucceed()
+                ProgressHUD.colorAnimation = .orange
                 
                 readerController.navigationItem.largeTitleDisplayMode = .never
                 navigationController?.pushViewController(readerController, animated: true)
+            } else {
+                ProgressHUD.showFailed()
             }
             
-            ProgressHUD.showSucceed()
-            ProgressHUD.colorAnimation = .orange
+            
             
         } else {
            
