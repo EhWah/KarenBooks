@@ -129,7 +129,6 @@ public final class PDFViewController: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-    
         collectionView.backgroundColor = backgroundColor
         collectionView.register(PDFPageCollectionViewCell.self, forCellWithReuseIdentifier: "page")
         
