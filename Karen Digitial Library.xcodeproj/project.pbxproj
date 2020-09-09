@@ -19,6 +19,7 @@
 		FB52553724F5CAEC00311E1F /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52553624F5CAEC00311E1F /* Books.swift */; };
 		FB817F88250953B0000B4BAC /* BookForChildrenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB817F87250953B0000B4BAC /* BookForChildrenCollectionViewCell.swift */; };
 		FB817F8A250953FC000B4BAC /* MagazineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB817F89250953FC000B4BAC /* MagazineCollectionViewCell.swift */; };
+		FB817F8C25096FBF000B4BAC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB817F8B25096FBF000B4BAC /* WebViewController.swift */; };
 		FBD383012508184500763D6A /* OurPickCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD383002508184500763D6A /* OurPickCollectionViewCell.swift */; };
 		FBD60A162507035D00727ED1 /* OurPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD60A152507035D00727ED1 /* OurPickViewController.swift */; };
 		FBD60A182507054C00727ED1 /* BookForChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD60A172507054C00727ED1 /* BookForChildrenViewController.swift */; };
@@ -42,6 +43,7 @@
 		FB52553624F5CAEC00311E1F /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 		FB817F87250953B0000B4BAC /* BookForChildrenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookForChildrenCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB817F89250953FC000B4BAC /* MagazineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB817F8B25096FBF000B4BAC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		FBD383002508184500763D6A /* OurPickCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPickCollectionViewCell.swift; sourceTree = "<group>"; };
 		FBD60A152507035D00727ED1 /* OurPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPickViewController.swift; sourceTree = "<group>"; };
 		FBD60A172507054C00727ED1 /* BookForChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookForChildrenViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				FB817F87250953B0000B4BAC /* BookForChildrenCollectionViewCell.swift */,
 				FBD60A192507068C00727ED1 /* MagazineViewController.swift */,
 				FB817F89250953FC000B4BAC /* MagazineCollectionViewCell.swift */,
+				FB817F8B25096FBF000B4BAC /* WebViewController.swift */,
 				FB51205224F411C000B02E4E /* Assets.xcassets */,
 				FB51205424F411C000B02E4E /* LaunchScreen.storyboard */,
 				FB51205724F411C000B02E4E /* Info.plist */,
@@ -241,6 +244,7 @@
 				FB817F88250953B0000B4BAC /* BookForChildrenCollectionViewCell.swift in Sources */,
 				FBD60A182507054C00727ED1 /* BookForChildrenViewController.swift in Sources */,
 				FBD383012508184500763D6A /* OurPickCollectionViewCell.swift in Sources */,
+				FB817F8C25096FBF000B4BAC /* WebViewController.swift in Sources */,
 				FB51204A24F411BD00B02E4E /* AppDelegate.swift in Sources */,
 				FB51204C24F411BD00B02E4E /* SceneDelegate.swift in Sources */,
 				FB817F8A250953FC000B4BAC /* MagazineCollectionViewCell.swift in Sources */,

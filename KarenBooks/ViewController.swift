@@ -64,29 +64,34 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if let remotePDFDocumentURL = URL(string: books[indexPath.row].bookURL) {
-            
+
             if let document = PDFDocument(url: remotePDFDocumentURL) {
-                
+
                 let readerController = PDFViewController.createNew(with: document, title: books[indexPath.row].bookTitleEnglish, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: true, startPageIndex: 0)
-                
+
                 ProgressHUD.showSucceed()
                 ProgressHUD.colorAnimation = .orange
-                
+
                 readerController.navigationItem.largeTitleDisplayMode = .never
                 navigationController?.pushViewController(readerController, animated: true)
             } else {
-                ProgressHUD.showFailed()
+                
+                let webReaderController = WebViewController()
+                webReaderController.magazineUrl = books[indexPath.row].bookURL
+                webReaderController.navigationItem.largeTitleDisplayMode = .never
+                navigationController?.pushViewController(webReaderController, animated: true)
             }
-            
-            
-            
+
+
+
         } else {
-           
+
             ProgressHUD.showFailed()
             ProgressHUD.colorAnimation = .orange
         }
         
         
+
         
     }
 }

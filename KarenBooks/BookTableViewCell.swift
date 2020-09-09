@@ -23,7 +23,7 @@ class BookTableViewCell: UITableViewCell {
         bookEnglishTitle.text = book.bookTitleEnglish
         bookKarenTitle.text = book.bookTitleKaren
         bookCategory.text = book.bookCategory
-        bookFrom.text = book.bookAuthor
+        bookFrom.text = "From: \(book.bookAuthor)"
         
         if let url = URL(string: book.bookCoverURL) {
             bookCover.af.setImage(withURL: url)

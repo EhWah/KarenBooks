@@ -9,15 +9,16 @@
 import UIKit
 import ProgressHUD
 import Alamofire
+import PDFReader
 
 class OurPickViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     var books = [Book]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         requestJson()
@@ -39,7 +40,7 @@ class OurPickViewController: UIViewController {
         }
         collectionView.reloadData()
     }
-
+    
 }
 
 extension OurPickViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -55,5 +56,35 @@ extension OurPickViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 186, height: 270)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let remotePDFDocumentURL = URL(string: books[indexPath.row].bookURL) {
+            
+            if let document = PDFDocument(url: remotePDFDocumentURL) {
+                
+                let readerController = PDFViewController.createNew(with: document, title: books[indexPath.row].bookTitleEnglish, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: true, startPageIndex: 0)
+                
+                ProgressHUD.showSucceed()
+                ProgressHUD.colorAnimation = .orange
+                
+                readerController.navigationItem.largeTitleDisplayMode = .never
+                navigationController?.pushViewController(readerController, animated: true)
+            } else {
+                
+                let webReaderController = WebViewController()
+                webReaderController.magazineUrl = books[indexPath.row].bookURL
+                webReaderController.navigationItem.largeTitleDisplayMode = .never
+                navigationController?.pushViewController(webReaderController, animated: true)
+            }
+            
+            
+            
+        } else {
+            
+            ProgressHUD.showFailed()
+            ProgressHUD.colorAnimation = .orange
+        }
+        
     }
 }
