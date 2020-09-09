@@ -414,7 +414,7 @@
                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="childrenCell" id="0ps-Q3-eBv">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="childrenCell" id="0ps-Q3-eBv" customClass="BookForChildrenCollectionViewCell" customModule="Karen_Digitial_Library" customModuleProvider="target">
                                         <rect key="frame" x="20" y="0.0" width="133" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zL3-oq-21s">
@@ -453,6 +453,10 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="133" height="200"/>
+                                        <connections>
+                                            <outlet property="bookCover" destination="fyE-3i-BBJ" id="OPO-3Y-fAi"/>
+                                            <outlet property="bookTitle" destination="3Wg-cP-R8C" id="ejB-Hv-6M2"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -477,7 +481,6 @@
         <!--Magazine View Controller-->
         <scene sceneID="snT-fe-uAM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iIC-0r-n96" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Xbm-cV-NqF" customClass="MagazineViewController" customModule="Karen_Digitial_Library" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sFB-zs-4Gw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
@@ -493,7 +496,7 @@
                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="magazineCell" id="zMo-cj-OVh">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="magazineCell" id="zMo-cj-OVh" customClass="MagazineCollectionViewCell" customModule="Karen_Digitial_Library" customModuleProvider="target">
                                         <rect key="frame" x="20" y="4" width="133" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lNG-v0-Mq0">
@@ -532,6 +535,10 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="133" height="200"/>
+                                        <connections>
+                                            <outlet property="bookCover" destination="l0f-P4-C0j" id="Xec-jw-mmB"/>
+                                            <outlet property="bookTitle" destination="9m4-jR-6Q7" id="KbA-a8-6z1"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -549,6 +556,7 @@
                         <outlet property="collectionView" destination="Mui-F0-qw3" id="wzZ-cp-BKf"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iIC-0r-n96" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="316" y="2064"/>
         </scene>
