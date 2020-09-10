@@ -13,7 +13,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Karen Library-->
+        <!--All Books-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Karen_Digitial_Library" customModuleProvider="target" sceneMemberID="viewController">
@@ -133,7 +133,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Karen Library" id="2fe-al-lVF"/>
+                    <navigationItem key="navigationItem" title="All Books" id="2fe-al-lVF">
+                        <barButtonItem key="rightBarButtonItem" image="arrow.2.circlepath" catalog="system" id="FXg-5y-FAU">
+                            <connections>
+                                <action selector="refreshButtonTap:" destination="BYZ-38-t0r" id="hdD-RJ-iyi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="DRo-6t-t6Z" id="A8s-x5-ha3"/>
                     </connections>
@@ -180,7 +186,7 @@
             </objects>
             <point key="canvasLocation" x="170" y="48"/>
         </scene>
-        <!--Home-->
+        <!--Karen Library-->
         <scene sceneID="M2V-zs-yzn">
             <objects>
                 <viewController id="aaL-nS-8Yw" sceneMemberID="viewController">
@@ -284,7 +290,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BNV-9T-p3s"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="PG1-JM-isb"/>
+                    <navigationItem key="navigationItem" title="Karen Library" id="PG1-JM-isb"/>
                     <size key="freeformSize" width="414" height="1100"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7js-uJ-Jsd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -562,6 +568,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.2.circlepath" catalog="system" width="128" height="101"/>
         <image name="book.fill" catalog="system" width="128" height="100"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="notAvailable" width="134" height="176"/>

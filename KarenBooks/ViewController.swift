@@ -46,6 +46,12 @@ class ViewController: UIViewController {
         tableView.reloadData()
     }
     
+    @IBAction func refreshButtonTap(_ sender: Any) {
+        books.removeAll()
+        requestJson()
+    }
+    
+    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
